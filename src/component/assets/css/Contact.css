@@ -1,0 +1,192 @@
+.contact-container {
+
+  padding: 0 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+
+  
+}
+
+.contact-box {
+  position: relative;
+  border-radius: 30px;
+  top: 30px;
+  width: 70%;
+  padding: 25px;
+  background: rgb(239, 235, 235);
+  box-shadow: 0px 5px 15px rgb(142, 141, 141);
+  line-height: 2rem;
+  
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+ 
+}
+
+
+.contact .rightSide {
+  
+  height: 100%;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .rightSide h1 {
+  font-family:serif;
+  color:#000000;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+form {
+  
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+form input {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border:#fff;
+  border-bottom: 1px solid #414040;
+  background-color: #ffffff;
+  color: black;
+}
+
+form select {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: black;
+}
+
+form textarea {
+  margin-top: 15px;
+  height: 70px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #121619;
+  background-color: #fff;
+  color: rgb(6, 6, 6);
+}
+input::placeholder,
+textarea::placeholder {
+  font-weight: 100;
+  color: rgb(172, 172, 172);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 10px;
+  font-size: 16px;
+}
+textarea::placeholder{
+  padding-top:10px;
+}
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form label {
+  margin-top: 15px;
+  color: #000000;
+}
+
+form button {
+  position: relative;
+  bottom :40px;
+  margin-top: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 140px;
+  height: 30px;
+  border: none;
+  background-color: #41494f;
+  color: whitesmoke;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+form button:hover{
+  background-color:sienna;
+}
+
+/* field code*/
+.field{
+width:100%
+
+}
+.subfield_1{
+width: 45%;
+float: left;
+
+}
+.subfield_2{
+  width: 45%;
+float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .total{
+   height:100%;
+   
+    
+  }
+  .contact-container {
+    padding: 50px 10px;
+    
+   
+
+     /* Increase padding on medium screens */
+  }
+
+  .contact-box {
+    width: 80%;
+    font-size:medium; /* Adjust width for medium screens */
+    position:relative;
+    top:50px;
+    height:200%;
+    
+  }
+  .contact {
+    width: 80%;
+    height: auto;
+   
+  }
+
+  .contact .rightSide{
+    position:relative;
+    top:150px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .subfield_1,.subfield_2{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .contact-container {
+    padding: 0 10px; /* Decrease padding further for very small screens */
+  }
+  
+  .contact-box {
+    width: 100%; /* Make the box full width on small screens */
+    border-radius: 0; /* Remove border-radius for full-width boxes */
+    box-shadow: none; /* Remove box-shadow for full-width boxes */
+    margin-top: 250px; /* Remove top margin for full-width boxes */
+  }
+}

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    
+}
+
+
+
+.top-screen{
+    height: 100vh;
+    width:100%;
+    background-image: url('../image/cyber-about.jpeg');
+    background-size: cover;   
+}
+
+.about-box {
+    
+    border-radius: 20px;
+    border: 0;
+    width:47%;
+    float:right;
+    padding: 30px ;
+    margin: 230px 0px ;
+    
+}
+
+.about-box2{
+border-radius: 30px;
+width:100%;
+padding:30px 160px 0px 160px  ;
+margin:30px 0 30px 0;
+border: 0;
+line-height: 2rem;
+}
+
+.about-box-inner{
+    
+    border-radius: 15px;
+    top: 30px;
+    width:100%;
+    padding: 10px;
+    margin:0 0 30px 0;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px rgb(198, 197, 197);
+    line-height: 2rem;
+}
+
+.about-box2 h2{
+    position: relative;
+    line-height: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 20px;
+    padding: 0 0 14px 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+ span{
+    color:#c40101;
+    font-size: 30px;
+    font-weight:500;
+}
+
+.about-box h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 15px;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+   
+}
+
+.about-box h4{
+    font-size:1.3rem;
+    font-weight: 500;
+    padding: 0 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #c40101;
+    font-style: italic;
+}
+
+.about-box2 p{
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+}
+
+.about-box p {
+    position: relative;
+    font-size: 20px;
+    padding: 1.25rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+
+}
+
+@media screen and (max-width: 576px) {
+    .about-box {
+        
+        padding: 35px ;
+        float:left;
+        width:100%;
+        height:20%;
+    }
+
+    .top-screen{
+        
+            height: 40vh;
+            width:100%;
+            background-image: url('../image/cyber-about.jpeg');
+            background-size: cover;   
+        
+    }
+
+    span{
+        font-size:x-large;
+    }
+
+    .about-box2 {
+        padding:0 5% 0 5%;
+    }
+
+    .about-box2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-box h1 {
+        padding-top:50px;
+        font-size: 2.5rem;
+    }
+
+    .about-box h4 {
+        font-size: 1.5rem;
+        
+    }
+
+    .about-box2 p, .about-box p {
+        font-size: 1.2rem;
+    }
+}

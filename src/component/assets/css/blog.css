@@ -1,0 +1,86 @@
+.blog {
+   height: 100vh;
+    overflow-y:auto ;
+    background-image: url('../image/service-bg.jpg');
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+  
+  .blog-content_1 {
+    font-size: 30px;
+    font-weight:bolder;
+    text-align: center;
+    padding: 20rem;
+  }
+
+.blog-post{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+ .post {
+    width: 80%;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: #000000;
+    /* border-top: 5px solid #000000;
+    border-right: 10px solid #6c6b6b;
+    border-bottom: 10px solid #535353;
+    border-left: 5px solid #000000; */
+    /* margin-top: 5rem; */
+    margin-bottom:5rem ;
+    background: rgba(252, 250, 250, 0.989);
+    box-shadow: 0px 5px 15px rgb(136, 136, 136);
+    
+}
+ .post .post-img{
+    width: 30%;
+    float:left;
+    position: relative;
+    left:100px;
+
+ }
+.post-img img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+ }
+ .post .post-description{
+    width: 50%;
+    float: right;
+    font-size: 24px;
+    position: relative;
+    right:20px;
+ }
+
+ @media (max-width: 768px) {
+   .blog-content_1 {
+       padding: 10rem 1rem; /* Adjust padding for smaller screens */
+   }
+
+   .post {
+       width: 80%; /* Adjust width for smaller screens */
+       padding: 20px; /* Adjust padding for smaller screens */
+       
+   }
+
+   .post .post-description {
+       font-size: 16px; 
+       
+   }
+
+   .post .post-img{
+      display:none;
+  
+   }
+
+   
+
+  
+}
